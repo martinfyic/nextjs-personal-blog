@@ -2,6 +2,8 @@ import '../styles/globals.css';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 
+import { Navbar } from '@/components';
+
 const roboto = Roboto({ weight: ['100', '300', '700'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -16,7 +18,18 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='es'>
-			<body className={roboto.className}>{children}</body>
+			<body className={`bg-neutral-900 text-white ${roboto.className}`}>
+				<Navbar />
+				<div
+					id='page-top-spacer'
+					className='h-12 bg-gradient-to-t from-transparent to-neutral-800'
+				/>
+				{children}
+				<div
+					id='page-bottom-spacer'
+					className='h-16'
+				/>
+			</body>
 		</html>
 	);
 }
