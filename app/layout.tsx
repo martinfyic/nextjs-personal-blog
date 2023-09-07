@@ -18,17 +18,15 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='es'>
-			<body className={`bg-neutral-900 text-white ${roboto.className}`}>
+			<body
+				className={`container mx-auto bg-neutral-100 dark:bg-neutral-900 dark:text-white ${roboto.className}`}
+			>
 				<Navbar />
 				<div
 					id='page-top-spacer'
-					className='h-12 bg-gradient-to-t from-transparent to-neutral-800'
+					className='h-12'
 				/>
 				{children}
-				<div
-					id='page-bottom-spacer'
-					className='h-16'
-				/>
 			</body>
 		</html>
 	);
