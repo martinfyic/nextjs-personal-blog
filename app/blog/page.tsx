@@ -12,6 +12,7 @@ const BlogPage: NextPage = () => {
 		'slug',
 		'topic',
 		'author',
+		'authorImage',
 	]);
 
 	return (

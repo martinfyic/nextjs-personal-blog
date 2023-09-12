@@ -5,7 +5,15 @@ import { getAllPosts } from '@/lib';
 import { PostHero, PostPreview } from '@/components';
 
 export const HomePage: NextPage = () => {
-	const posts = getAllPosts(['title', 'date', 'excerpt', 'coverImage', 'slug']);
+	const posts = getAllPosts([
+		'title',
+		'date',
+		'excerpt',
+		'coverImage',
+		'slug',
+		'author',
+		'authorImage',
+	]);
 	const recentPosts = posts.slice(0, 2);
 
 	return (
