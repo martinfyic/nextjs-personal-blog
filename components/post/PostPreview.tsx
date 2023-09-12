@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
 import DateFormatter from '../DateFormatter';
 
 type Items = {
@@ -22,9 +22,19 @@ export default function PostPreview({ post }: { post: Items }) {
 						{post.title}
 					</p>
 					<DateFormatter dateString={post.date} />
-					<p className='text-slate-400 font-semibold text-sm opacity-70'>
-						Autor: {post.author}
-					</p>
+					<div className='flex flex-row justify-start items-center gap-2 my-4'>
+						<Image
+							className='rounded-full shadow'
+							src={post.authorImage}
+							alt={post.author}
+							width={50}
+							height={50}
+							priority
+						/>
+						<p className='text-slate-400 font-semibold text-sm opacity-70'>
+							{post.author}
+						</p>
+					</div>
 					<p>{post.excerpt}</p>
 				</div>
 			</Link>
