@@ -1,9 +1,11 @@
 ---
 title: '5 Backend Design Patterns con Node.js y como implementarlos'
 excerpt: 'Node.js se ha convertido en una opción popular para el desarrollo de aplicaciones backend debido a su naturaleza rápida y escalable. Sin embargo, puede ser desafiante diseñar un sistema backend robusto y mantenible.'
-coverImage: '/next.svg'
+coverImage: '/images/node-js-img.avif'
 date: '2023-09-07T05:35:07.322Z'
 author: 'Martin Ferreira'
+authorImage: '/author/martin-ferreira.png'
+topic: 'Node.js'
 ---
 
 ## Introducción
