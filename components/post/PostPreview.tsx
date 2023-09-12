@@ -22,6 +22,9 @@ export default function PostPreview({ post }: { post: Items }) {
 						{post.title}
 					</p>
 					<DateFormatter dateString={post.date} />
+					<p className='text-slate-400 font-semibold text-sm opacity-70'>
+						Autor: {post.author}
+					</p>
 					<p>{post.excerpt}</p>
 				</div>
 			</Link>
