@@ -25,7 +25,7 @@ const PostPage: NextPage<Props> = async ({ params }) => {
 					<picture className='grid place-content-center mb-14'>
 						<Image
 							src={post.coverImage}
-							alt={post.topic}
+							alt={post.author}
 							priority
 							width={400}
 							height={400}
